@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>마왕전 0.03</title>
+    <link rel='stylesheet' type='text/css' href="ma.css">
+  </head>
+  <body>
+    <h1>마왕을 물리치자!!</h1>
+
+    <div id='all'>
+      <div id='mawang'>
+          <br>
+          <p><img src="ma.jpg" id="ma"></p>
+          <h2>마왕</h2>
+          <p style="color:red;">마왕의 체력</p>
+          <div id='allhp' style="color:red;">
+          <span id="ohp">30</span>/30
+        </div>
+      </div>
+
+      <div id='yongsa'>
+          <br>
+          <p><img src="yongsa.jpg" id="yo"></p>
+          <h2>용사</h2>
+          <p style="color:blue;">용사의 체력</p>
+          <div id='allhp' style="color:blue;">
+          <span id="y_ohp">30</span>/30
+        </div>
+      </div>
+    </div>
+    <br>
+    <div id='button'>
+      <input class="attack" type="button" value="공격" onclick="minus(1)">
+      <input class="attack" type="button" value="3연격" onclick="minus(3)">
+    </div>
+  </body>
+  <script src='ma.js'></script>
+</html>
