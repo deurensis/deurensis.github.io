@@ -5,7 +5,7 @@ let yo = document.getElementById('yo');
 let hpcount = 30;
 let yohpcount = 30;
 function changeImage() {
-  if (hpcount <= 10) {
+  if (hpcount <= 10 && yohpcount > 0) {
     ma.src = "kill.jpg";
   }
   if (hpcount <= 0) {
@@ -20,7 +20,7 @@ function changeImage_ma_win() {
     }
 }
 function minus(attack) {
-  if (hpcount > 0) {
+  if (hpcount > 0 && yohpcount > 0) {
     hpcount-=attack;
     gethp.innerHTML = hpcount;
   }
